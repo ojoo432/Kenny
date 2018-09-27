@@ -1,0 +1,19 @@
+1. Camera calibration data is provided in the rosbag here. The camera we are using here is the ZED stereo camera, so there is a left and right image.  Please describe the process to collect camera calibration data. Also, what are some things you should take into consideration during data collection?  You may take a look at the data and the Kalibr webpage. 
+
+While collecting the camera calibration data, we need to have the calibration targets. It can either be the checkboard , circlegrid or the Aprilgrid. Then we should move the target or move the camera to change views and vary distances to the calibration target. It seems that the calibration is using dynamic dataset (spatial camera-imu calibration). So we should 1.move the sensor (target is fixed) 2.cameras should run at 20 Hz and IMU at 200 Hz 3.try to excite all rotation and acceleration axes of the IMU 4.avoid shocks (e.g. while picking up the sensor) 5.good illumination and shutter times are crucial here (to avoid motion blur while exciting the IMU)
+
+2. In the calibration data, we use Aprilgrid instead of regular checkerboard pattern to do calibration. What are the advantages?
+
+1.partially visible calibration boards can be used. Aprilgrid Partially visible Aprilgrid targets can be detected without problems. This greatly simplifies the data collection and makes this grid the recommended choice.
+2.pose of the target is fully resolved (no flips)
+
+3. You no longer need to run Kalibr yourself. The generated Kalibr output files by the TA can be downloaded here. Please take a look at the output files to see which camera model is chosen, and explain why is the other one inappropriate. Reprojection error provides a qualitative measure of accuracy when doing camera calibration. Please explain what does the reprojection error mean and what is its unit?
+
+The camera model we choose is the pinhole camera model. Except this model, the other is omnidirectional camera ,which is more like the fisheye lens. It can provide 180 degree FOV. Apparently this doesn't fit the model of ZED camera. The image from the ZED camera is more like the pinhole model.
+
+Reprojection errors provide a qualitative measure of accuracy. A reprojection error is the distance between a pattern keypoint detected in a calibration image, and a corresponding world point projected into the same image. 
+Then you calculate the euclidean distance between the original point and the "reprojected" one. Basically it is a least squares minimization, that has no geometrical interpretation. The unit is meter.
+
+4. Compare the extrinsic calibration results given in the Kalibr output files above between the left and right cameras of the ZED to the specs, which can be found online.  Explain whether the results above are reasonable or not.
+5. Explain the process to map a point in 3D onto the 2D image plane as pixels. For the distortion model, please assume radial-tangential distortion. You should also mention what are the extrinsic, intrinsic, and distortion parameters comprised of and its values according to the Kalibr output files.
+6. ZED can also provide rectified images in addition to raw images. What is image rectification and what is it used for in stereo cameras? 

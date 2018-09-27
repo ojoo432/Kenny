@@ -1,0 +1,2 @@
+set(vector_map_MESSAGE_FILES "/home/ee904-i5-old-pc-1/Desktop/Kenny/catkin_ws/src/vector_map/msg/waypoint_publish.msg;/home/ee904-i5-old-pc-1/Desktop/Kenny/catkin_ws/src/vector_map/msg/waypoints_array.msg;/home/ee904-i5-old-pc-1/Desktop/Kenny/catkin_ws/src/vector_map/msg/road_marking.msg;/home/ee904-i5-old-pc-1/Desktop/Kenny/catkin_ws/src/vector_map/msg/road_marking_array.msg")
+set(vector_map_SERVICE_FILES "")

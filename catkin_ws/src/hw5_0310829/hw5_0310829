@@ -1,0 +1,28 @@
+1. How far can this radar measure? How many points does this radar measure each time?
+I think maybe 150m is the maximum range that radar can detect.
+There are three radars in the rosbag. Then by turing off others two radars.From my observation there should be 300 to 400 points for each frame time.
+
+2. Red, green and blue, which color do you think representing highest amplitude? How about lowest amplitude? Why and how do you infer it?
+I think the red one is the highest amplitude and the blue one is the lowest. Because I can always see from the data that red turns to green and green turns to blue. And so on blue turns to nothing when the object leaves the FOV of the radar. 
+
+3. If you just look at one radar, how many degrees is the azimuth angle resolution?
+I think the angle might be 0.5 ~ 0.7 deg.
+
+4. Please describe false positive and true negative measurements that you see in the data.
+false positive case: In NCTU bag there are trees everywhere , we can detect trunks for sure. But we always detect that leaves for objects centroids.
+true negative: In NCTU bag there is a concrete wall of dorm 3 of master degree in the radar's range. But apparently radar can't detect that wall.
+
+5. What are drawbacks of radar measurements?
+It cannot differentiate the color of the object. RADAR systems will get all the information regarding an object but will not provide data regarding color of the target.
+Radio signals have challenges maneuvering materials that are conductors. If an object is behind such material, it is difficult for it to obtain the data regarding the target.
+Radio signals travel through air and space where it can be combined with other radio signals from other frequency. If not properly directed, the signals can be interrupted by other signals and alter the information being transmitted.
+
+6. In data NCTU.bag, what are your findings?
+In NCTU bag there is a person with his bicycle but apparently we only see that points locate at the bicycle. Not at the person.
+
+7. How about data highway.bag?
+When the car are going down in the interchange , there is a car in front of our car and it is much shorter than our car. So the radar wont't detect it.
+
+8. How about data city.bag?
+In city bag I find that there are much more points than others bag, but most of all are static objects like wall, buildings etc.
+And comparing with highway data, there are motorcycles in this bag. Sometimes radar can't detect them accurately.

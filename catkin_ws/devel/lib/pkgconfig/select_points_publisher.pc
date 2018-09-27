@@ -1,0 +1,8 @@
+prefix=/home/ee904-i5-old-pc-1/Desktop/Kenny/catkin_ws/devel
+
+Name: select_points_publisher
+Description: Description of select_points_publisher
+Version: 0.0.0
+Cflags: 
+Libs: -L/home/ee904-i5-old-pc-1/Desktop/Kenny/catkin_ws/devel/lib 
+Requires: 

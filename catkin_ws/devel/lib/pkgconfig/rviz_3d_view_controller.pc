@@ -1,0 +1,8 @@
+prefix=/home/ee904-i5-old-pc-1/Desktop/Kenny/catkin_ws/devel
+
+Name: rviz_3d_view_controller
+Description: Description of rviz_3d_view_controller
+Version: 0.0.0
+Cflags: 
+Libs: -L/home/ee904-i5-old-pc-1/Desktop/Kenny/catkin_ws/devel/lib 
+Requires: 

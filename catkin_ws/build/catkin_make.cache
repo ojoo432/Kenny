@@ -1,0 +1,2 @@
+hw4_0310829:points_density:points_msgs:rviz_3d_view_controller:rviz_cloud_annotation:select_publisher:vector_map:waypoints_generator
+-DCATKIN_DEVEL_PREFIX=/home/ee904-i5-old-pc-1/Desktop/Kenny/catkin_ws/devel -DCMAKE_INSTALL_PREFIX=/home/ee904-i5-old-pc-1/Desktop/Kenny/catkin_ws/install -G Unix Makefiles

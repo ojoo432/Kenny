@@ -1,0 +1,8 @@
+prefix=/home/ee904-i5-old-pc-1/Desktop/Kenny/catkin_ws/devel
+
+Name: hw4_0310829
+Description: Description of hw4_0310829
+Version: 0.0.0
+Cflags: 
+Libs: -L/home/ee904-i5-old-pc-1/Desktop/Kenny/catkin_ws/devel/lib 
+Requires: 

@@ -1,0 +1,8 @@
+prefix=/home/ee904-i5-old-pc-1/Desktop/Kenny/catkin_ws/install
+
+Name: vector_map
+Description: Description of vector_map
+Version: 0.0.0
+Cflags: -I/home/ee904-i5-old-pc-1/Desktop/Kenny/catkin_ws/install/include
+Libs: -L/home/ee904-i5-old-pc-1/Desktop/Kenny/catkin_ws/install/lib 
+Requires: message_runtime roscpp rospy std_msgs

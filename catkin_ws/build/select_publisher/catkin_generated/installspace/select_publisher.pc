@@ -1,0 +1,8 @@
+prefix=/home/ee904-i5-old-pc-1/Desktop/Kenny/catkin_ws/install
+
+Name: select_publisher
+Description: Description of select_publisher
+Version: 0.0.0
+Cflags: 
+Libs: -L/home/ee904-i5-old-pc-1/Desktop/Kenny/catkin_ws/install/lib 
+Requires: 
